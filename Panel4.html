@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 40px;
+}
+
+button:hover {background-color: grey}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}	
+#yesterday{
+	margin-left: 120px;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+pre{
+	color: green;
+	margin-left:130px; 
+	font-size: 20px;
+}
+</style>
+<script>
+function yesterday() {
+    document.getElementById("yesterday").innerHTML = "12000";
+}
+function today() {
+    document.getElementById("today").innerHTML = "350";
+}
+function monthly() {
+    document.getElementById("monthly").innerHTML = "500";
+}
+function yearly() {
+    document.getElementById("yearly").innerHTML = "400";
+}
+</script>
+</head>
+
+<body bgcolor="#2F2F39">
+
+<h2>General Overview</h2><br><br><br>
+<pre><b>YESTERDAY      TODAY      MONTHLY      YEARLY</b></pre>
+<button id="yesterday" type="button" onclick="yesterday()">10000</button>
+<button id="today" type="button" onclick="today()">400</button>
+<button id="monthly" type="button" onclick="monthly()">245</button>
+<button id="yearly" type="button" onclick="yearly()">195</button>
+</body>
+</html>
