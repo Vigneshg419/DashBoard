@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="odometer-theme.css" />
+<style>
+.odometer {
+  font-size: 25px;
+}
+#odometer1{
+	margin-left: 120px;
+}
+#odometer2{
+	margin-left: 75px;
+}
+#odometer3{
+	margin-left: 75px;
+}
+#odometer4{
+	margin-left: 65px;
+}
+a {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  margin-left: 40px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}	
+#today{
+	margin-left: 120px;
+}
+h2{
+	color: white;
+	text-align: center;
+}
+pre{
+	color: green;
+	margin-left:130px; 
+	font-size: 20px;
+}
+</style>
+<script>
+window.odometerOptions = {
+  format: '(ddd).dd'
+};
+</script>
+
+</head>
+
+<body bgcolor="#2F2F39">
+
+<h2>Yield Overview</h2><br><br><br>
+<a target="_blank" id="today" href="Today.html">Today</a>
+<a target="_blank" id="monthly" href="Monthly.html">Monthly</a>
+<a target="_blank" id="yearly" href="">Yearly</a>
+<a target="_blank" id="total" href="">Total</a><br><br>
+<script src="jquery.min.js"></script>
+<script src="odometer.js"></script>
+<body bgcolor="#2F2F39">
+<div id="odometer1" class="odometer">0123</div>
+<div id="odometer2" class="odometer">0123</div>
+<div id="odometer3" class="odometer">0123</div>
+<div id="odometer4" class="odometer">0123</div>
+<script>
+  setTimeout(function(){
+    $('#odometer1').html(9875);
+    $('#odometer2').html(3456);
+    $('#odometer3').html(1230);
+    $('#odometer4').html(4561);
+  }, 500);
+</script>
+</body>
+</html>
