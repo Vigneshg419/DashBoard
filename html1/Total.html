@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Top Solar Plant"    
+      },
+      axisY: {
+        title: "Energy(kWh)"
+      },
+      legend: {
+        verticalAlign: "bottom",
+        horizontalAlign: "center"
+      },
+      data: [
+
+      {        
+        color: "#000",
+        type: "column",  
+        showInLegend: true, 
+        legendMarkerType: "none",
+        legendText: "kWh = one UNIT",
+        dataPoints: [      
+        { x: 1, y: 297571, label: "Plant 1"},
+        { x: 2, y: 267017,  label: "Plant 2" },
+        { x: 3, y: 175200,  label: "Plant 3"},
+        { x: 4, y: 154580,  label: "Plant 4"},
+        { x: 5, y: 116000,  label: "Plant 5"},
+        { x: 6, y: 97800, label: "Plant 6"},
+        { x: 7, y: 20682,  label: "Plant 7"},        
+        { x: 8, y: 20350,  label: "Plant 8"}
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="canvasjs.min.js"></script></head>
+  <body bgcolor="grey">
+    <div id="chartContainer" style="height: 600px; width: 100%;">
+    </div>
+  </body>
+  </html>

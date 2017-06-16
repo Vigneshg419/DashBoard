@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="odometer-theme.css" />
+<style>
+.odometer {
+  font-size: 25px;
+}
+</style>
+<script>
+window.odometerOptions = {
+  format: '(ddd).dd'
+};
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="odometer.js"></script>
+<body bgcolor="#2F2F39">
+<div id="odometer1" class="odometer">0</div>
+<div id="odometer2" class="odometer">0</div>
+<div id="odometer3" class="odometer">0</div>
+<div id="odometer4" class="odometer">0</div>
+
+<script>
+  setTimeout(function(){
+    $('#odometer1').html(9875);
+    $('#odometer2').html(3456);
+    $('#odometer3').html(1230);
+    $('#odometer4').html(4561);
+  }, 500);
+</script>
+</body>
+</html>
